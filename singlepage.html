@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+</head>
+<body>
+    <header class="singlepage">
+            <div class="gradient"></div>
+        <ul>
+                    
+            <li><a href="#contact">CONTACT</a></li>
+
+            <li><a href="singlepage.html">PORTOFOLIO</a></li>
+
+            <li><a href="index.html">ABOUT ME</a></li>
+
+    </ul>
+    
+<h1 class="singleintro">hello, on this page you can find my p5 project<br> use the sliders for interaction</h1>
+</header>
+    
+    <main>
+        
+            <script src="p5/sketch.js"></script>
+            <div class="sliders">      
+                <h2 class="slidertitle">Change the triangle size</h2>     
+                 <input type="range" id="slider" name="slider" min="10" max="200">
+            
+                 <h2 class="slidertitle">Change angle of the triangle</h2>     
+                 <input type="range" id="slider2" name="slider" min="10" max="360">
+
+                 <h2 class="slidertitle">Change the background <br> with 3 RGB sliders</h2>   
+                 <h2 class="slidertitle">R</h2>  
+                 <input type="range" id="slider3" name="slider" min="10" max="255">
+
+                 <h2 class="slidertitle">G</h2>     
+                 <input type="range" id="slider4" name="slider" min="50" max="255">
+
+                 <h2 class="slidertitle">B</h2>    
+                 <input type="range" id="slider5" name="slider" min="100" max="255">
+                 <button class="open-button" onclick="openForm()">CONTACT</button>
+
+        <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <p class="contactform">log in</p>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+                </div>
+                
+                <h3 class="errortext">deze inhoud kan niet worden getoond<br> op schermen kleiner dan 768 pixels.</h3>
+                
+  
+    </main>
+  <footer></footer>
+  <script src="js/jquery-3.4.1.js"></script>
+
+  <script src="js/script.js"></script>  
+</body>
+</html>
